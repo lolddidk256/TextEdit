@@ -37,8 +37,8 @@ class TextEditor:
         
         edit_menu = tk.Menu(menubar, tearoff=0)
         menubar.add_cascade(label="Edit", menu=edit_menu)
-        edit_menu.add_command(label="Undo", command=self.undo, accelerator="Ctrl+Z")
-        edit_menu.add_command(label="Redo", command=self.redo, accelerator="Ctrl+Y")
+        edit_menu.add_command(label="XXXX", command=self.undo, accelerator="Ctrl+Z")
+        edit_menu.add_command(label="XXXX", command=self.redo, accelerator="Ctrl+Y")
         edit_menu.add_separator()
         edit_menu.add_command(label="Cut", command=self.cut, accelerator="Ctrl+X")
         edit_menu.add_command(label="Copy", command=self.copy, accelerator="Ctrl+C")
@@ -66,10 +66,10 @@ class TextEditor:
         
         ttk.Separator(toolbar, orient=tk.VERTICAL).pack(side=tk.LEFT, fill=tk.Y, padx=5)
         
-        undo_btn = ttk.Button(toolbar, text="Undo", command=self.undo)
+        undo_btn = ttk.Button(toolbar, text="XXXX", command=self.undo)
         undo_btn.pack(side=tk.LEFT, padx=2)
         
-        redo_btn = ttk.Button(toolbar, text="Redo", command=self.redo)
+        redo_btn = ttk.Button(toolbar, text="XXXX", command=self.redo)
         redo_btn.pack(side=tk.LEFT, padx=2)
     
     def create_text_area(self):
